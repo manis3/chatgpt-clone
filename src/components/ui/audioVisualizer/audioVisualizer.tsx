@@ -60,7 +60,6 @@ export default function AudioVisualizer({
         const dpr = window.devicePixelRatio || 1;
 
         //set canvas size based on container and device pixel ratio
-
         const rect = container?.getBoundingClientRect();
 
         //Account for the 2px total margin (1px on each size)
@@ -68,7 +67,6 @@ export default function AudioVisualizer({
         canvas.height = (rect.height - 2) * dpr;
 
         //scale canvas css size to match container minus margins
-
         canvas.style.width = `${rect.width - 2}px`;
         canvas.style.height = `${rect.height - 2}px`;
       }
