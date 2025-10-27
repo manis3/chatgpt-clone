@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 
-type Message = { id: string; role: "user" | "assistent"; content: string };
+type Message = { id: string; role: "user" | "assistant"; content: string };
 export default function useChat() {
   const [message, setMessage] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -29,7 +29,7 @@ export default function useChat() {
     const assistentId = String(Date.now() + 1);
     const assistentMessage: Message = {
       id: assistentId,
-      role: "assistent",
+      role: "assistant",
       content: "",
     };
     setMessage((m) => [...m, assistentMessage]);
