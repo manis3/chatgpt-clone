@@ -103,7 +103,7 @@ export default function AudioVisualizer({
       Math.floor(noramlizedHeight * AUDIO_CONFIG.COLOR.INTENISTY_RANGE) +
       AUDIO_CONFIG.COLOR.MIN_INTENSITY;
 
-    return `rbg(${intensity}, ${intensity}, ${intensity})`;
+    return `rgb(${intensity}, ${intensity}, ${intensity})`;
   };
 
   const drawBar = (
