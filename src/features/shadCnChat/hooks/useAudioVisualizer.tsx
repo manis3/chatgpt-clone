@@ -35,7 +35,7 @@ export default function useAudioVisualizer() {
     mediaRecorderRef.current?.stop();
     audioStream?.getTracks().forEach((track) => track.stop());
     setIsRecording(false);
-    setAudioStream(null);
+    // setAudioStream(null);
   };
 
   return {

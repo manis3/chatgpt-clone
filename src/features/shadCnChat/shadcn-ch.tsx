@@ -10,6 +10,7 @@ export function ShadCnChat() {
   return (
     <div className="w-full flex flex-col items-center justify-center ">
       <p className="font-bold text-xl ">Start Recording Audio</p>
+      {audioStream && <audio controls src={audioStream}  className="my-4"/>}
       <div>
         <AudioVisualizer
           stream={audioStream}
