@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../Button/default";
 import { Check, Copy } from "lucide-react";
 import { cn } from "@/utils/cn";
+import useCopyToClipboard from "@/hooks/copy/useCopyToClipboard";
 
 type CopyButtonProps = {
   content: string;
