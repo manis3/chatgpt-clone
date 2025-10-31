@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@theme {
+  @keyframes typing-dot-bounce {
+    0%, 40% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-0.25rem);
+    }
+  }
+}
+
+.typing-dot-bounce {
+  animation: typing-dot-bounce 1.4s infinite ease-in-out;
+}

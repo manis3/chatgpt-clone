@@ -3,6 +3,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div><FilePreview/></div>
+    // <div><FilePreview/></div>
+    <div>asldfkjalskdfj</div>
   )
 }
